@@ -1,6 +1,4 @@
 import 'dart:io';
-
-import 'package:dio/adapter.dart';
 import 'package:dio/dio.dart';
 
 import 'package:fluttermvvmtemplate/core/base/model/base_error.dart';
@@ -16,7 +14,7 @@ class CoreDio with DioMixin implements Dio, ICoreDioNullSafety {
   CoreDio(this.options) {
     options = options;
     interceptors.add(InterceptorsWrapper());
-    httpClientAdapter = DefaultHttpClientAdapter();
+    httpClientAdapter = HttpClientAdapter();
   }
   @override
   final BaseOptions options;
