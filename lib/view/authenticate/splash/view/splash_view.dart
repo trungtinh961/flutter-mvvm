@@ -51,7 +51,7 @@ class SplashView extends StatelessWidget {
               children: [
                 Text(
                   LocaleKeys.splash_welcome.tr(),
-                  style: context.textTheme.headline4?.copyWith(
+                  style: context.textTheme.headlineMedium?.copyWith(
                     fontWeight: FontWeight.w700,
                     color: context.colorScheme.primaryContainer,
                   ),
