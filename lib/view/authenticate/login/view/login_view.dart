@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 
 import 'package:fluttermvvmtemplate/core/base/view/base_widget.dart';
-import 'package:fluttermvvmtemplate/core/constants/image/image_constatns.dart';
+import 'package:fluttermvvmtemplate/core/constants/image/image_constant.dart';
 import 'package:fluttermvvmtemplate/core/extension/context_extension.dart';
 import 'package:fluttermvvmtemplate/core/extension/string_extension.dart';
 import 'package:fluttermvvmtemplate/core/init/lang/locale_keys.g.dart';
@@ -41,7 +41,7 @@ class LoginView extends StatelessWidget {
       duration: context.lowDuration,
       height: context.mediaQuery.viewInsets.bottom > 0 ? 0 : context.height * 0.3,
       color: Colors.white,
-      child: Center(child: Image.asset(ImageConstants.instance.hotDog)),
+      child: Center(child: Image.asset(ImageConstants.instance.projeIcon)),
     );
   }
 

@@ -32,15 +32,6 @@ class AnalyticsManager {
   Future setUserAnalytics({String? userID, String? name, String? value}) async {
     await _analytics.setUserId(id: userID);
 
-//kullanıcılara rol vermek için kullanılabilir (ADMİN-KULLANICI-PREMIUMS VS VS)
-//bunu yapacaksak öncelikle
-//firebase consola git
-//custom definision tıkla
-//sap üstte create custom dimensions bas
-//user property ye bu parametrdeki name ile aynı ismi ver
-//scope den user ı seç
-//dimension name ya raporda gözükecek olan başlığı yaz
-//descriptiona ufak bi açıklamasını yaz
     if (name != null && value != null) {
       await _analytics.setUserProperty(name: name, value: value);
     }

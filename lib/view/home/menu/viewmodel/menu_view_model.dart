@@ -3,7 +3,7 @@ import 'package:fluttermvvmtemplate/view/home/menu/model/menu_model.dart';
 import 'package:mobx/mobx.dart';
 
 import '../../../../core/base/model/base_view_model.dart';
-import '../../../../core/constants/image/image_constatns.dart';
+import '../../../../core/constants/image/image_constant.dart';
 
 part 'menu_view_model.g.dart'; // This is the generated file.
 

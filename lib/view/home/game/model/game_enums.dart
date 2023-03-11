@@ -1,1 +1,0 @@
-enum GameEnum { NEW, TOP }
