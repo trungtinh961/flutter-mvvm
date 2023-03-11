@@ -32,8 +32,8 @@ abstract class _SplashViewModelBase with Store, BaseViewModel, DeviceAndCache {
     });
 
     // Dummy for moduler page
-    Future.delayed(const Duration(seconds: 1)).then((value) {
-      navigation.navigateToPage(path: NavigationConstants.BUY_VIEW);
+    Future.delayed(const Duration(seconds: 2)).then((value) {
+      navigation.navigateToPageClear(path: NavigationConstants.MENU_VIEW);
     });
   }
 
@@ -45,7 +45,8 @@ abstract class _SplashViewModelBase with Store, BaseViewModel, DeviceAndCache {
     _networkInit();
     final isNeedForceUpdate = await _checkAppVersion();
     if (isNeedForceUpdate) {
-      showAboutDialog(context: viewModelContext, children: [const Text('Neeed to Update')]);
+      showAboutDialog(
+          context: viewModelContext, children: [const Text('Neeed to Update')]);
     } else {
       // await navigation.navigateToPageClear(path: NavigationConstants.TEST_VIEW);
     }

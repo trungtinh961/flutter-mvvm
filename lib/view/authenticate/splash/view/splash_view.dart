@@ -29,7 +29,7 @@ class SplashView extends StatelessWidget {
         child: Stack(
           children: [
             buildCenterTextWelcome(context, viewModel),
-            buildAnimatedAlignIcon(viewModel, context),
+            // buildAnimatedAlignIcon(viewModel, context),
           ],
         ),
       ),
@@ -57,7 +57,7 @@ class SplashView extends StatelessWidget {
                   ),
                   textAlign: TextAlign.center,
                 ),
-                const CircularProgressIndicator.adaptive()
+                // const CircularProgressIndicator.adaptive()
               ],
             ),
           );
@@ -73,7 +73,8 @@ class SplashView extends StatelessWidget {
     return Observer(
       builder: (_) {
         return AnimatedAlign(
-          alignment: viewModel.isFirstInit ? Alignment.center : Alignment.bottomCenter,
+          alignment:
+              viewModel.isFirstInit ? Alignment.center : Alignment.bottomCenter,
           duration: context.durationLow,
           child: Image.asset(ImageConstants.instance.projeIcon),
         );

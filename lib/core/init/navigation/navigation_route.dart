@@ -6,6 +6,7 @@ import 'package:fluttermvvmtemplate/product/exception/navigate_model_not_found.d
 import 'package:fluttermvvmtemplate/view/authenticate/onboard/view/on_board_view.dart';
 import 'package:fluttermvvmtemplate/view/authenticate/splash/view/splash_view.dart';
 import 'package:fluttermvvmtemplate/view/authenticate/test/view/test_view.dart';
+import 'package:fluttermvvmtemplate/view/home/menu/view/menu_view.dart';
 import 'package:fluttermvvmtemplate/view/settings/model/settings_dynamic.dart';
 import 'package:fluttermvvmtemplate/view/settings/view/subview/settings_dynamic_view.dart';
 
@@ -27,6 +28,9 @@ class NavigationRoute {
 
       case NavigationConstants.ON_BOARD:
         return normalNavigate(const OnBoardView(), NavigationConstants.ON_BOARD);
+
+      case NavigationConstants.MENU_VIEW:
+        return normalNavigate(const MenuView(), NavigationConstants.MENU_VIEW);
 
       case NavigationConstants.SETTINGS_WEB_VIEW:
         if (args.arguments is SettingsDynamicModel) {

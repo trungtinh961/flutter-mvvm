@@ -99,9 +99,9 @@ class SettingsView extends StatelessWidget {
               return DropdownButton<Locale>(
                 items: [
                   DropdownMenuItem(
-                    value: LanguageManager.instance.trLocale,
+                    value: LanguageManager.instance.viLocale,
                     child: Text(
-                      LanguageManager.instance.trLocale.countryCode?.toUpperCase() ?? '',
+                      LanguageManager.instance.viLocale.countryCode?.toUpperCase() ?? '',
                     ),
                   ),
                   DropdownMenuItem(
