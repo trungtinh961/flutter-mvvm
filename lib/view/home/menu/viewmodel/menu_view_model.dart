@@ -4,6 +4,7 @@ import 'package:mobx/mobx.dart';
 
 import '../../../../core/base/model/base_view_model.dart';
 import '../../../../core/constants/image/image_constant.dart';
+import '../../../../core/constants/navigation/navigation_constants.dart';
 
 part 'menu_view_model.g.dart'; // This is the generated file.
 
@@ -59,5 +60,10 @@ abstract class _MenuViewModel with Store, BaseViewModel {
         feedbackType: FeedbackType.psychologicalCounseling,
       ),
     ];
+  }
+
+  void onSelectMenu(MenuModel? item) {
+    navigation.navigateToPage(
+        path: NavigationConstants.SUBJECT_CONTENT_VIEW, data: item);
   }
 }

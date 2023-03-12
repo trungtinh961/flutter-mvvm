@@ -7,7 +7,6 @@ import 'package:fluttermvvmtemplate/view/home/menu/viewmodel/menu_view_model.dar
 import 'package:kartal/kartal.dart';
 
 import '../../../../core/base/view/base_widget.dart';
-import '../../../authenticate/splash/viewmodel/splash_view_model.dart';
 import 'menu_item_view.dart';
 
 class MenuView extends StatefulWidget {
@@ -58,6 +57,7 @@ class _MenuViewState extends State<MenuView> {
         itemBuilder: (BuildContext context, int index) {
           return MenuItemView(
             item: viewModel.listMenu[index],
+            onSelected: viewModel.onSelectMenu,
           );
         },
       ),

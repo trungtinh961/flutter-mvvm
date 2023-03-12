@@ -6,6 +6,7 @@ class NavigationConstants {
   static const SETTINGS_WEB_VIEW = '/settingsWebView';
   static const ON_BOARD = '/onBoard';
   static const MENU_VIEW = '/menuView';
+  static const SUBJECT_CONTENT_VIEW = '/contentView';
 
   static const BUY_VIEW = '/buyView';
 }
