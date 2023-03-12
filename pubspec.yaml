@@ -52,6 +52,7 @@ dependencies:
     git:  https://github.com/VB10/architecture_theme.git
   architecture_widgets:
     path: module/architecture_widgets
+  cloud_firestore: ^4.4.4
 
 dev_dependencies:
   flutter_test:
