@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fluttermvvmtemplate/view/subject_content/model/subject_content_type.dart';
+import 'package:fluttermvvmtemplate/view/subject_detail/model/subject_content_type.dart';
 
 class SubjectContentItemView extends StatelessWidget {
   const SubjectContentItemView({

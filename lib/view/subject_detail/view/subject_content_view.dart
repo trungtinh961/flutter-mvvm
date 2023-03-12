@@ -2,7 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:fluttermvvmtemplate/view/home/menu/model/menu_model.dart';
-import 'package:fluttermvvmtemplate/view/subject_content/view/subject_content_item_view.dart';
+import 'package:fluttermvvmtemplate/view/subject_detail/view/subject_content_item_view.dart';
 import 'package:kartal/kartal.dart';
 
 import '../../../core/base/view/base_widget.dart';

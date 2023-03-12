@@ -4,9 +4,11 @@ import 'package:fluttermvvmtemplate/core/constants/navigation/navigation_constan
 import 'package:fluttermvvmtemplate/view/authenticate/splash/view/splash_view.dart';
 import 'package:fluttermvvmtemplate/view/home/menu/model/menu_model.dart';
 import 'package:fluttermvvmtemplate/view/home/menu/view/menu_view.dart';
-import 'package:fluttermvvmtemplate/view/subject_content/view/subject_content_view.dart';
+import 'package:fluttermvvmtemplate/view/subject_detail/view/subject_content_view.dart';
 
 import '../../../product/exception/navigate_model_not_found.dart';
+import '../../../view/webview/view/dynamic_webview.dart';
+import '../../../view/webview/webview_model.dart';
 
 class NavigationRoute {
   NavigationRoute._init();
@@ -28,6 +30,15 @@ class NavigationRoute {
               NavigationConstants.SUBJECT_CONTENT_VIEW);
         }
         throw NavigateException<MenuModel>(args.arguments);
+        
+      case NavigationConstants.WEB_VIEW:
+        if (args.arguments is WebViewModel) {
+          return normalNavigate(
+              DynamicWebView(model: args.arguments as WebViewModel),
+              NavigationConstants.WEB_VIEW);
+        }
+        throw NavigateException<MenuModel>(args.arguments);
+
       default:
         return MaterialPageRoute(
           builder: (context) => const NotFoundNavigationWidget(),
