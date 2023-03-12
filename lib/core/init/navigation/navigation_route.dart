@@ -1,4 +1,3 @@
-import 'package:all_of_template/features/buy_view.dart';
 import 'package:architecture_widgets/src/card/not_found_navigation_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttermvvmtemplate/core/constants/navigation/navigation_constants.dart';
@@ -14,9 +13,6 @@ class NavigationRoute {
     switch (args.name) {
       case NavigationConstants.DEFAULT:
         return normalNavigate(const SplashView(), NavigationConstants.DEFAULT);
-
-      case NavigationConstants.BUY_VIEW:
-        return normalNavigate(const BuyView(), NavigationConstants.BUY_VIEW);
 
       case NavigationConstants.MENU_VIEW:
         return normalNavigate(const MenuView(), NavigationConstants.MENU_VIEW);
